@@ -1,7 +1,7 @@
 FROM openjdk:11 AS BUILD_IMAGE
 RUN apt update && apt install maven -y
-RUN git clone https://github.com/davidlimacardoso/devops-vprofile-project.git
-RUN cd devops-vprofile-project\
+RUN git clone https://github.com/skylitik/res.git
+RUN cd res\
     && git checkout containers\
     && mvn install
 
